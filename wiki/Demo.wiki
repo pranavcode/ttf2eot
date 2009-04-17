@@ -26,7 +26,9 @@ Hello, World!
 </div>
 }}}
 
-As only IE accepts this format, other browsers (Safari 3.x, Firefox 3.1.x, Chrome 2.x) are likely to adopt `src: url("foo.ttf") format("truetype")`. You can use [http://www.quirksmode.org/css/condcom.html conditional comments] to specify both conventions, provide the font in EOT and TTF format, then use conditional comments to make IE see the EOT version.
+Only IE understands this format, other browsers (Safari 3.x, Firefox 3.1.x, Chrome 2.x) are likely to adopt `src: url("foo.ttf") format("truetype")` instead.
+
+You can use [http://www.quirksmode.org/css/condcom.html conditional comments] to specify both formats, simply provide the font in both EOT and TTF format, then use conditional comments to make IE see the EOT version.
 
 {{{
 <style>
@@ -53,6 +55,6 @@ This works in IE7 and Safari 3.x.
 === Note for Windows Users ===
 
 
-If you're a windows user, *this is probably not what you're looking for*.
+If you're a Windows user - *this is probably not what you're looking for*.
 
-You will probably feel more comfortable using "WEFT", Microsoft's own utility for handling EOT. ttf2eot is primarily for UNIX users who have to make font-embedding work for IE, or for batch conversions.
+You will probably feel more comfortable using "WEFT", Microsoft's own utility for handling EOT. ttf2eot is primarily for UNIX users who want to make font embedding work for IE without using Microsoft software.
