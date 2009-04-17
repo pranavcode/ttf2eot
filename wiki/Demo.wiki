@@ -1,0 +1,34 @@
+#summary Simple ttf2eot Example
+
+= Introduction =
+
+Simple demonstration of ttf2eot usage.
+
+
+= Details =
+
+First create the output file
+
+`$ ttf2eot < input.ttf > output.eot`
+
+If that worked, you can specify the file in your CSS.
+
+{{{
+<style>
+@font-face { 
+    font-family: "testing";
+    src: url("output.eot");
+}
+</style>
+<div style="font-family: testing">
+Hello, World!
+</div>
+}}}
+
+--
+
+Please note, only IE accepts this format. Other browsers (Safari 3.x, Firefox 3.1.x, Chrome 2.x) are likely to adopt `src: url("foo.ttf") format("ttf")`, you can use [http://www.quirksmode.org/css/condcom.html CSS conditional comments] to specify both conventions.
+
+--
+
+If you're a windows user, *this is probably not what you're looking for*. Although it would be easy to get ttf2eot to work on windows, you will probably feel more comfortable using "WEFT", Microsoft's own tool. This utility is primarily for UNIX users who have to make font-embedding work for IE.
