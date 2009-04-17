@@ -26,8 +26,6 @@ Hello, World!
 </div>
 }}}
 
-----
-
 As only IE accepts this format, other browsers (Safari 3.x, Firefox 3.1.x, Chrome 2.x) are likely to adopt `src: url("foo.ttf") format("truetype")`. You can use [http://www.quirksmode.org/css/condcom.html CSS conditional comments] to specify both conventions, provide the font in EOT and TTF format, then use conditional comments to make IE see the EOT version.
 
 {{{
@@ -46,7 +44,7 @@ As only IE accepts this format, other browsers (Safari 3.x, Firefox 3.1.x, Chrom
 </style>
 <![endif]-->
 <div style="font-family: testing">
-Hello, World!
+Hello, Multiple Browser World!
 </div>
 }}}
 
