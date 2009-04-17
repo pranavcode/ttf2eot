@@ -38,12 +38,12 @@ You can use [http://www.quirksmode.org/css/condcom.html conditional comments] to
 }
 </style>
 <!--[if IE]>
-<style>
-@font-face { 
-    font-family: "testing";
-    src: url("output.eot");
-}
-</style>
+    <style>
+    @font-face { 
+        font-family: "testing";
+        src: url("output.eot");
+    }
+    </style>
 <![endif]-->
 <div style="font-family: testing">
 Hello, Multiple Browser World!
