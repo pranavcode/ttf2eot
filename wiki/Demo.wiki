@@ -50,7 +50,7 @@ Hello, Multiple Browser World!
 </div>
 }}}
 
-This works in IE7 and Safari 3.x.
+This should work in IE6, IE7, Safari 3/4 and Firefox 3.1.
 
 === Note for Windows Users ===
 
