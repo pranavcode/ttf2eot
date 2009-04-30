@@ -59,7 +59,7 @@ If you're a Windows user - *this is probably not what you're looking for*.
 
 You will probably feel more comfortable using "WEFT", Microsoft's own utility for handling EOT. ttf2eot is primarily for UNIX users who want to make font embedding work for IE without using Microsoft software.
 
-However, if you do wish to use ttf2eot, a command line binary is provided, it is used like so:
+However, if you're certain you do wish to use ttf2eot, a command line windows binary is provided. It is used like so:
 
 {{{
 C:\>ttf2eot.exe c:\windows\fonts\arial.ttf c:\output.eot
