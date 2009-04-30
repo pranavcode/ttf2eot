@@ -58,3 +58,23 @@ This should work in IE6, IE7, IE8, Safari 3/4 and Firefox 3.1+
 If you're a Windows user - *this is probably not what you're looking for*.
 
 You will probably feel more comfortable using "WEFT", Microsoft's own utility for handling EOT. ttf2eot is primarily for UNIX users who want to make font embedding work for IE without using Microsoft software.
+
+However, if you do wish to use ttf2eot, a command line binary is provided, it is used like so:
+
+{{{
+C:\>ttf2eot.exe c:\windows\fonts\arial.ttf c:\output.eot
+
+C:\>dir output.eot
+ Volume in drive C has no label.
+ Volume Serial Number is E4EC-5386
+
+ Directory of C:\
+
+30/04/2009  21:41           367,270 output.eot
+               1 File(s)        367,270 bytes
+               0 Dir(s)  51,782,295,552 bytes free
+
+C:\>
+}}}
+
+Please note, It is unlikely the author will be able to help with Windows related questions.
